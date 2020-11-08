@@ -8,6 +8,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { SearchEmployeeComponent } from './search-employee/search-employee.component';
 import { EmployeeRowComponent } from './employee-row/employee-row.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { CreateEmployeesComponent } from './create-employees/create-employees.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     AppComponent,
     SidebarComponent,
     SearchEmployeeComponent,
-    EmployeeRowComponent
+    EmployeeRowComponent,
+    CreateEmployeesComponent
   ],
   imports: [
     BrowserModule,

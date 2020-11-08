@@ -1,0 +1,18 @@
+<h2>Save Employees</h2>
+<div class="row">
+    <div class="col">
+        <div class="upload-btn-wrapper">
+            <button class="btn">Upload a file</button>
+            <input type="file" (change)="fileChange($event)" placeholder="Upload file" accept=".csv">
+        </div>
+    </div>
+</div>
+<div *ngIf="isSaving" class="spinner-border" role="status">
+    <span class="sr-only">Saving...</span>
+</div>
+<div *ngIf="saveError" role="status">
+    <span class="error-message">Could not save file</span>
+</div>
+<div *ngIf="saveSuccess" role="status">
+    <span>File save success</span>
+</div>
