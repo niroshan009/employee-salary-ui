@@ -1,0 +1,18 @@
+<div class="card-wrapper">
+    <div *ngIf="employee">
+        <div class="row row-style">
+            <div class="col col-style ">
+                <div class="col">{{ employee? employee.id : ''}}</div>
+            </div>
+            <div class="col col-style ">
+                <div class="col">{{ employee? employee.login : '' }}</div>
+            </div>
+            <div class="col col-style ">
+                <div class="col">{{ employee? employee.name : '' }}</div>
+            </div>
+            <div class="col col-style ">
+                <div class="col">{{ employee? employee.salary : '' }}</div>
+            </div>
+        </div>
+    </div>
+</div>
